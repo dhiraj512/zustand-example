@@ -6,7 +6,8 @@ import { ThemeToggle } from "./themeToggle"
 import Cart from "../app/e-commerce/cart"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
-import { Slash } from "lucide-react"
+import { GithubIcon, Slash } from "lucide-react"
+import { Button } from "./ui/button"
 
 interface navlinkProps { title: string; href: string; }
 
@@ -44,6 +45,11 @@ export default function Navbar() {
             </div>
             <span className="flex-grow" />
             {pathName === "/e-commerce" && <Cart />}
+            <Link href="https://github.com/dhiraj512/zustand-example">
+                <Button variant="outline" size="icon">
+                    <GithubIcon className="h-[1.2rem] w-[1.2rem] " />
+                </Button>
+            </Link>
             <ThemeToggle />
         </div>
     )
