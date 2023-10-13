@@ -48,7 +48,7 @@ export default function HomePage() {
                     Made With:<CustomLink href="https://nextjs.org/" >Next.js</CustomLink><CustomLink href="https://ui.shadcn.com" >Shadcn/ui</CustomLink><CustomLink href="https://github.com/pmndrs/zustand" >Zustand</CustomLink>
                 </div>
                 <div className='flex items-center gap-3'>
-                    Deployed with:<CustomLink href="https://vercel.com">Vercel</CustomLink>
+                    Deployed with:<CustomLink href="https://netlify.com">Netlify</CustomLink>
                 </div>
             </div>
             <div className='relative max-w-screen-md'>
